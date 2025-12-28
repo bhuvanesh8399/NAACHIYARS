@@ -1,0 +1,25 @@
+Straight answer, no fluff 👇
+
+🔐 Default Admin Credentials (Section-1 seed)
+
+Username
+
+admin.naachiyars
+
+
+Password
+
+Admin.secure1
+
+
+Why this combo:
+
+✅ Has uppercase (A)
+
+✅ Has lowercase
+
+✅ Has dot (.) — mandatory by your policy
+
+✅ Under 72-byte bcrypt limit
+
+✅ Clean, deterministic seed for Section-1
