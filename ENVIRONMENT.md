@@ -1,14 +1,15 @@
 # Environment Setup
 
-## Backend (`apps/api`)
+## Backend (`backend`)
 
 - Copy `.env.example` to `.env` and set:
-  - `API_SECRET_KEY` – strong secret for JWT signing.
-  - `API_JWT_ALGORITHM` – defaults to HS256.
-  - `API_ACCESS_TOKEN_EXPIRE_MINUTES` – token lifetime (minutes).
-- Run with `uvicorn main:app --reload` from `apps/api`.
+  - `SECRET_KEY` – strong secret for JWT signing.
+  - `ALGORITHM` – defaults to HS256.
+  - `ACCESS_TOKEN_EXPIRE_MINUTES` – token lifetime (minutes).
+  - `DATABASE_URL` – SQLite by default.
+- Run with `uvicorn backend.main:app --reload` from `backend`.
 
-## Frontend (`apps/web`)
+## Frontend (`frontend`)
 
 - Copy `.env.example` to `.env` and set:
   - `VITE_API_URL` – URL of the FastAPI service (e.g., `http://localhost:8000`).
